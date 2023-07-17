@@ -7,11 +7,26 @@
 }
 :root{
     --primary-color:#3A3A3A;
+    --secondary-color: #E02C6D;
+}
+.section-title{
+    color:var(--primary-color);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.section-details{
+    color:var(--primary-color);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
 }
 /* header section style  */
 header{
     width: 90%;
     margin: auto;
+}
+.header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,6 +54,31 @@ nav li{
     color: var(--primary-color);
     font-weight: 600;
 }
+/* header banner section  */
+.header-banner-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.header-banner-info{
+    margin-right: 3rem
+}
+
+.header-banner-section img{
+    width: 40%;
+    background: url('images/Circle design.svg');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.Prebook-btn{
+    border: 0;
+    border-radius: 41px;
+    background: var(--secondary-color);
+    color: #FFF;
+    font-weight: 700;
+    padding: 10px;
+}
 
 /* Responsive style  */
 @media screen and (max-width: 576px) {
@@ -50,5 +90,22 @@ nav li{
     }
     nav li{
         display: none;
+    }
+    .header-banner-section{
+        flex-direction: column-reverse;
+    }
+    .header-banner-section img{
+        width: 80%;
+    }
+    .header-banner-info{
+        text-align: center;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+    .header-banner-info .section-title{
+        font-size: 1.6rem;
+    }
+    .header-banner-info .section-details{
+        font-size: 0.7rem;
     }
 }
