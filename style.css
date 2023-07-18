@@ -149,6 +149,54 @@ nav li{
     letter-spacing: 0.252px;
     padding: 5px 0;
 }
+.see-more{
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 16px;
+    font-weight: 700;
+    text-align: end;
+    margin: 15px 0;
+}
+/* feature section  */
+.feature-product{
+    width: 90%;
+    margin: 80px auto;
+    display: flex;
+}
+.feature-info{
+    margin:50px;
+}
+.feature-info .section-title{
+    color: #0A0826;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+.join-now-btn{
+    background: var(--secondary-color);
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 0;
+    padding: 10px 20px;
+}
+
+/* footer style  */
+footer{
+    text-align: center;
+    background-color: #0A0826;
+    color: #FFF;
+    padding: 50px;
+}
+footer .section-title{
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+}
+footer .section-details{
+    color:  #D9DBE1;
+    font-size: 1rem;
+    font-weight: 700;
+
+}
 /* Responsive style  */
 @media screen and (max-width: 576px) {
     .logo{
@@ -193,5 +241,12 @@ nav li{
     .popular-collection-cards{
         grid-template-columns: repeat(1,1fr);
     }
-
+    .feature-product{
+        flex-direction: column-reverse;
+        margin: 15px auto;
+    }
+    .feature-info{
+        text-align: start;
+        margin:15px 0;
+    }
 }
